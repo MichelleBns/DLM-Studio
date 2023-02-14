@@ -1,0 +1,629 @@
+/************ 
+
+    GENERAL
+
+************/
+
+:root{
+    --blanc: #FDF0E5;
+    --chaire: #EECFB4;
+    --texteleger:#8E8681;
+    --accentue: #C75146;
+    --noir: #2A2A3A;    
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--blanc);
+}
+h1, h2{
+    font-family: 'raleway', sans-serif;
+}
+h1{
+    color: var(--chaire);
+    font-size: 64px;
+    font-weight: 800;
+}
+h2{
+    margin: 0px;
+    font-size: 48px;
+    font-weight: normal;
+}
+h3{
+    font-size: 32px;
+    font-weight: normal;
+}
+p{
+    font-size: 20px;
+}
+h3, p{
+    font-family: 'Barlow', sans-serif;
+}
+.bouton{
+    background-color: var(--accentue);
+    border-radius: 5px;
+    border: 2px solid var(--accentue);
+    color: var(--blanc);
+    display: block;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 335px;
+    padding: 16px 32px; 
+    transition: 0.3s; 
+}
+.bouton:hover {
+    color: var(--noir);
+    background-color: var(--blanc);
+    border: 2px solid var(--noir);
+}
+.except{
+    text-transform: lowercase;
+}
+
+/****************** 
+
+    HEADER
+
+*******************/
+header{
+    background-image: linear-gradient(90deg, rgba(28, 28, 38,1) 0%, rgba(28, 28, 38,0.8) 43%, rgba(28, 28, 38,0) 50%), url(../img/mobileheaderedsheeran.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+.placelimite{
+    background-color: var(--noir);
+    color: var(--blanc);
+    max-width: 250px; 
+    padding: 16px 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* logo */
+header img{
+    margin: 0px;
+}
+#contenuheader{
+    color: var(--blanc);
+    margin: 100px 0px;
+    max-width: 35%;
+}
+.container {
+    padding: 16px 60px;
+}
+
+/************ 
+
+    MAIN
+
+************/
+
+/** SECTION 1 - PERFORMER **/
+#sectionperf{
+    background-image: url(../img/guitarecoffrebiaishaut.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 100px 0px;
+    color: var(--noir);
+}
+.contenusectionperf{
+    margin-left:500px;
+    margin-right: 16px;
+    max-width: 50%;
+}
+#sectionperf p{
+    margin: 40px 0px;
+}
+
+/** SECTION 2 - ERGONOMIE **/
+#sectionergo{
+    background-color: var(--chaire);
+    background-image: url(../img/guitarefacecouchee2.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: var(--noir);
+    padding: 100px 0px 150px 0px;
+}
+#sectionergo h2{
+    margin-bottom: 40px;
+}
+#sectionergo article{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/** SECTION 3 MATERIAUX DURABLES **/
+#matdurables{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0px;
+}
+#matdurables h2{
+    color: var(--noir);
+    margin: 40px 0px;
+}
+#matdurables .flex{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.box{
+    padding: 32px;
+    background-color: var(--noir);
+    width: 30%;
+    color: var(--blanc);
+    text-align: center;
+}
+.box h3{
+    color: var(--accentue);
+}
+#matdurables a{
+    margin-top: 40px;
+}
+
+/** SECTION 4 DESIGN **/
+#design{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 20%;
+    color: var(--noir);
+}
+#design p{
+    margin: 40px 0px;
+}
+
+
+/** SECTION 5 SONORE **/
+#sonore{
+    background-image: url(../img/bgsonore.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: -150px;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 1;
+}
+#sonore h2{
+    text-align: center;
+    color: var(--blanc);
+}
+#sonore article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 100px;
+}
+#sonore .box{
+    background: none;
+}
+#sonore .bouton{
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+
+/** SECTION 6 SESSION **/
+#session{
+    background-color: var(--chaire);
+    color: var(--noir);
+    margin-top: -500px;
+    padding: 400px 200px 100px 200px;
+}
+#session article{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    flex-direction: column;
+}
+#session img{
+    width: 100%;
+    object-fit: cover;
+    margin: 40px 0px;
+}
+#session .bouton{
+    align-self: center;
+}
+
+
+/** SECTION 7 - REMPORTER **/
+#remporter{
+    display: flex;
+    margin-top: -200px;
+    color: var(--noir);
+}
+.remporterflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+    margin: 100px 10%;
+}
+#remporter p{
+    margin: 40px 0px;
+}
+
+/************ 
+
+FOOTER
+
+************/
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+/************ 
+
+MEDIA QUERIES
+
+************/
+
+
+/** DESKTOP UN PEU GRAND **/
+@media screen and (max-width:1200px){
+    #sectionperf{
+        background-image: url(../img/guitarecoffrebiaishaut.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        padding: 100px 0px;
+        color: var(--noir);
+    }
+    .contenusectionperf{
+        margin-left:500px;
+        margin-right: 16px;
+        max-width: 50%;
+    }
+
+    /* 3 - materiaux durables */
+    #matdurables .flex{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .box {
+        width: 100%;
+        margin: 10px 10px;
+    }
+
+    /* 4 - design unique */
+    #design{
+        margin: 100px 32px 0px;
+    }
+    
+    /* 5 - sonore */
+    #sonore{
+        margin: 0px;
+        padding: 200px 0px 200px;
+    }
+    #sonore .bouton{
+        align-self: center;
+        margin: 40px 0 0;
+    }
+    #sonore article {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 32px;
+    }
+    #sonore .box{  
+        margin: 0;
+        padding: 10px;
+        width: 50%;
+    }
+    /* 6 - analyse session */
+    #session{
+        margin-top: -300px;
+        padding: 200px 0px;
+    }
+}
+
+
+/***************************
+    TABLETTE MOYENNE
+****************************/
+@media screen and (max-width:768px){
+    /* header */
+    header{
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px;
+    }
+    .container {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    #contenuheader{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        margin: 0;
+        max-width: 100%;
+        align-items: center;
+    }
+    .container .bouton {
+        margin: 0;
+        margin-bottom: -50px;
+        align-self: center;
+    }
+
+    /* 1 - performer */
+    #sectionperf{
+        background-image: none;
+    }
+    .contenusectionperf, #matdurables .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenusectionperf{
+        align-items: center;
+        margin: 0px 16px;
+        max-width: 100%;
+    }
+    #sectionperf{
+        background-image: none;
+    }
+    .contenusectionperf{
+        align-items: center;
+        margin: 0px 16px;
+        max-width: 100%;
+    }
+
+    /* 2 - ergonomie */
+    #sectionergo{
+        background-image: url(../img/guitarefacecouchee2.png);
+        background-size: contain;
+        padding: 100px 0px;
+        color: var(--noir);
+    }
+    #sectionergo article{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 3 - materiaux durables */
+    #matdurables .flex{
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    .box {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    /* 4 - design unique */
+    #design{
+        margin: 100px 32px 200px;
+    }
+
+    /* 5 - sonore */
+    #sonore article, #remporter{
+        flex-direction: column;
+    }
+    #sonore article{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0px 36px;
+    }
+    #sonore .box {
+        margin: 0px;
+        padding: 0;
+        width: 100%;
+    }
+    #sonore{
+        background-image: url(../img/bgsonore.png);
+        background-repeat: no-repeat;
+        background-size: 600%;
+        margin: 0px;
+        padding: 300px 0px 200px;
+        max-height: 500vh;
+    }
+    #sonore .bouton{
+        align-self: center;
+        margin: 40px 0 0;
+    }
+    
+    /* 6 - analyse session */
+    #session{
+        background-color: var(--chaire);
+        color: var(--noir);
+        margin-top: -200px;
+        padding: 200px 0px;
+    }
+    #session article{
+        display: flex;
+        width: 80%;
+        margin: 0px auto;
+        flex-direction: column;
+    }
+    #session img{
+        width: 100%;
+        object-fit: cover;
+        margin: 40px 0px;
+    }
+
+    /* 7 - remporter */
+    #remporter img {
+        display: none;
+    }
+
+}
+
+
+/***************************
+    TELEPHONE MOYEN 
+****************************/
+@media screen and (max-width:576px){
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p { 
+        font-size: 20px;
+    }
+     /* header */
+    header{
+        background-image: linear-gradient(to top, rgba(28, 28, 38,1) 20%, rgba(28, 28, 38,0.8) 50%, rgba(28, 28, 38,0) 100%), url(../img/mobileheaderedsheeran.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0px;
+    }
+    .container {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #contenuheader{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        margin: 0;
+        max-width: 100%;
+        align-items: center;
+    }
+    .container .bouton {
+        margin: 0;
+        margin-bottom: -50px;
+        align-self: center;
+    }
+    #sectionperf{
+        background-image: none;
+    }
+    .contenusectionperf, #matdurables .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenusectionperf{
+        align-items: center;
+        margin: 0px 16px;
+        max-width: 100%;
+    }
+
+    /* 2 - ERGONOMIE */
+    #sectionergo{
+        background-color: var(--chaire);
+        background-image: url(../img/guitarefacecouchee2.png);
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        color: var(--noir);   
+    }
+    #sectionergo article{
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 0px 80px 0px;
+    }
+     
+    /* 3 - materiaux durables */
+    #matdurables .flex{
+        flex-direction: column;
+        width: 90%;
+    }
+    .box {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    /* 4 - design */
+    #design{
+        margin: 100px 16px 200px;
+    }
+
+    /* 5 - qualité sonore */
+    #sonore{
+        background-image: url(../img/bgsonore.png);
+        background-repeat: no-repeat;
+        background-size: 650%;
+        margin: 0px;
+        padding: 200px 0px 200px;
+        max-height: 500vh;
+    }
+    #sonore article, #remporter{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    #sonore .box {
+        margin: 0;
+        padding: 0;
+    }
+    #sonore article{
+        width: 100%;
+        padding: 0px 16px;
+    }
+    #sonore .bouton{
+        align-self: center;
+        margin: 40px 0 0;
+    }
+
+    /* 6 analyse session*/
+    #session{
+        all: inherit;
+        background-color: var(--chaire);
+        padding: 200px 32px;
+        margin-top: -250px;
+    }
+    #session article{
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #session img{
+        width: 100%;
+        object-fit: cover;
+        margin: 40px 0px;
+    }
+    #session .bouton{
+        align-self: center;
+    }
+
+    /* 7 - remporter */
+    #remporter{
+        display: flex;
+        margin-top: 0px;
+    }
+    .remporterflex{
+        padding-top: 0px;
+        margin: 100px 10% 200px;
+    }
+    #remporter img {
+        display: none;
+    }
+
+    /* 8 - footer */
+    footer a {
+        text-align: center;
+    }
+    footer img{
+        width: 50%;
+    }
+}
